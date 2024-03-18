@@ -4,8 +4,8 @@ function isCharacterALetter(char) {
 
 function vigenere(direzione) {
 
-    let inputText = document.getElementById("inputText").value;
-    let chiave = document.getElementById("chiave").value;
+    let inputText = document.getElementById("inputText").value.toLowerCase();
+    let chiave = document.getElementById("chiave").value.toLowerCase();
     // let direzione = document.getElementById("bottone").value;
     //let direzione;
     let indice_chiave = 0;
@@ -28,5 +28,5 @@ function vigenere(direzione) {
             output += char;
         }
     }
-    document.getElementById("output").innerText = output;
+    document.getElementById("output").innerText = output.toUpperCase();
 }

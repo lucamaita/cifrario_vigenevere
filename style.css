@@ -33,6 +33,7 @@ input[type="text"] {
     box-sizing: border-box;
     background-color: #666; /* Colore di sfondo del campo di input */
     color: #fff; /* Colore del testo del campo di input */
+    text-transform: uppercase;
 }
 
 button {
