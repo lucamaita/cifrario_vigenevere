@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cifrario di Vigenère</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Cifrario di Vigenère</h2>
+
+    <form id="formCifratura">
+
+        <label for="inputText">Testo da cifrare/decifrare</label><br>
+        <input type="text" id="inputText" name="inputText"><br><br>
+
+        <label for="chiave">Chiave di cifratura</label><br>
+        <input type="text" id="chiave" name="chiave"><br><br>
+
+        <button type="button" id="bottone" onclick="vigenere(direzione = 1)" value="1">Cifra</button>
+        <button type="button" id="bottone" onclick="vigenere(direzione = -1)" value="-1">Decifra</button>
+
+    </form><br>
+
+    <h3>Ouput:</h3>
+    <div id="output"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
